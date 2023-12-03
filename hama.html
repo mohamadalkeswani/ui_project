@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- For arabic right to left use dir="rtl" -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="digital, com, software development, safwan">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS comments */
+    /* Style meta element is for CSS :  */
+    /* General style */
+    * {
+       box-sizing: border-box; 
+    }
+    body {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    /* Style the header */
+    header{
+        background-color: #666;
+        padding:30px ;
+        text-align: center;
+        font-size: 35px;
+        color: #fff; /* Cites */
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav{
+        float: left;
+        width: 30%;
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+
+    }
+    /*Style the list inside the menu */
+    nav ul{
+        list-style-type:none ;
+        padding: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 500px;;
+        background: #f1f1f1;
+
+    }
+    /* Clear floats after the columns / boxes */
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*Style the footer */
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align:center ;
+        color: white; /*color means font color*/
+    }
+
+
+    /*Responsive layout - media quesry */
+    @media (max-width: 600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+    a{
+color: #000;
+font-weight: bold;  
+text-decoration: underline;
+align-items: center;
+margin: 40px;
+font-size: 20px;
+
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+    </style>
+    <head>
+    <title>UI Project</title>
+</head>  
+<body>
+    <!-- HTML comment tag -->
+    
+    
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">back home</a></li>
+                <li><a href="aleppo.html">Aleppo</a></li>
+                <li><a href="hama.html">Hama</a></li>
+                <li><a href="homs.html">Homs</a></li>
+                <li><a href="rafah.html">Rafah</a></li>
+
+            </ul>
+        </nav>
+        <article>
+            <h1>Hama</h1>
+            <img 
+            src="https://www.bpb.de/cache/images/2/241692_original.jpg?E0C45" 
+           
+            alt="1"
+
+            width="200"
+            height="200"
+            >
+
+            <img src="https://i.pinimg.com/originals/b3/3f/f2/b33ff2df53897801e61435bae3c13fba.jpg" 
+            
+            
+            alt="2"
+            width="200"
+            height="200"
+            >
+
+            <img src="https://img.freepik.com/fotos-premium/die-grosse-oberste-moschee-hama-syrien_545377-242.jpg?w=2000" 
+            
+            alt="3"
+            
+             width="200"
+            height="200"
+            >
+            <p>The area around Hama has been inhabited since 10,000 BC. Inhabited throughout the 2nd century BC, individual traces date back to the Paleolithic period.[2]
+                During excavations from 1931 to 1938, Danish archaeologists discovered traces of settlement from the 5th millennium BC and a total of twelve
+                 layers dating back to the Islamic period on the main hill on the northern outskirts of modern Hama. The tell was 336 m long, 215 m wide and 46 m high.[3]</p>
+                  <cite>wikipedia</cite>    
+                </article>
+    </section>
+    <footer>
+        <p>footer &copy; Mohamad 2023</p>
+    </footer>
+
+</body>
+</html>

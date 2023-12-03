@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!-- For arabic right to left use dir="rtl" -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="digital, com, software development, safwan">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS comments */
+    /* Style meta element is for CSS :  */
+    /* General style */
+    * {
+       box-sizing: border-box; 
+    }
+    body {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    /* Style the header */
+    header{
+        background-color: #666;
+        padding:30px ;
+        text-align: center;
+        font-size: 35px;
+        color: #fff; /* Cites */
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav{
+        float: left;
+        width: 30%;
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+
+    }
+    /*Style the list inside the menu */
+    nav ul{
+        list-style-type:none ;
+        padding: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 500px;;
+        background: #f1f1f1;
+
+    }
+    /* Clear floats after the columns / boxes */
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*Style the footer */
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align:center ;
+        color: white; /*color means font color*/
+    }
+
+
+    /*Responsive layout - media quesry */
+    @media (max-width: 600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+    a{
+color: #000;
+font-weight: bold;  
+text-decoration: underline;
+align-items: center;
+margin: 40px;
+font-size: 20px;
+
+
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+    </style>
+    <title>UI Project</title>
+</head>  
+<body>
+    <!-- HTML comment tag -->
+   
+    <p> 
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">back home</a></li>
+                <li><a href="aleppo.html">Aleppo</a></li>
+                <li><a href="hama.html">Hama</a></li>
+                <li><a href="homs.html">Homs</a></li>
+                <li><a href="rafah.html">Rafah</a></li>
+
+            </ul>
+        </nav>
+        <article>
+            <h1>Aleppo</h1>
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Syria_physical_location_map.svg/500px-Syria_physical_location_map.svg.png" 
+           
+            alt="Aleppo"
+
+            width="200"
+            height="200"
+            >
+
+            <img src="https://www.wmf.org/sites/default/files/styles/project_gallery_full_size/public/projects/gallery/SYR_Cit_Aleppo_JPEG_img-01.jpg?itok=eUHwwZEH" 
+            
+            
+            alt="Aleppo Castle"
+            width="200"
+            height="200"
+            >
+
+            <img src="https://www.banyo.de/cdn/shop/products/Untitled-1_0025_DSC01268.jpg?v=1687877014&width=1000" 
+            
+            alt="Aleppo Soap"
+            
+             width="200"
+            height="200"
+            >
+            <p>Aleppo was the capital of the 
+                important Amorite dynasty of 
+                Yamḥad. The kingdom of Yamḥad
+                 (c. 1800–1525 BC), 
+                 alternatively known as the 
+                 'land of Ḥalab,' 
+                 was one of the most powerful
+                  in the Near East during the 
+                  reign of Yarim-Lim I, 
+                  who formed an alliance with 
+                  Hammurabi of Babylonia against 
+                  Shamshi-Adad I of Assyria.[36]</p>
+                  <cite>wikipedia</cite>    
+                </article>
+    </section>
+    <footer>
+        <p>footer &copy; Mohamad 2023</p>
+    </footer>
+
+</body>
+</html>

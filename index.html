@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- For arabic right to left use dir="rtl" -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta keywords="digital, com, software development, safwan">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS comments */
+    /* Style meta element is for CSS :  */
+    /* General style */
+    * {
+       box-sizing: border-box; 
+    }
+    body {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    }
+    /* Style the header */
+    header{
+        background-color: #666;
+        padding:30px ;
+        text-align: center;
+        font-size: 35px;
+        color: #fff; /* Cites */
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav{
+        float: left;
+        width: 30%;
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+
+    }
+    /*Style the list inside the menu */
+    nav ul{
+        list-style-type:none ;
+        padding: 0;
+    }
+    nav ul li a{
+        text-decoration: none;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: 70%;
+        height: 500px;;
+        background: #f1f1f1;
+
+    }
+    /* Clear floats after the columns / boxes */
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*Style the footer */
+    footer{
+        background-color: #777;
+        padding: 10px;
+        text-align:center ;
+        color: white; /*color means font color*/
+    }
+
+
+    /*Responsive layout - media quesry */
+    @media (max-width: 600px){
+        nav, article {
+            width: 100%;
+            height: auto;
+        }
+    }
+    a{
+color: #000;
+font-weight: bold;  
+text-decoration: underline;
+align-items: center;
+margin: 40px;
+font-size: 20px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+    </style>
+    <title>UI Project</title>
+</head>  
+<body>
+    <!-- HTML comment tag -->
+    <h2>Ui basics Project</h2>
+    <p>In this homework i will explore you how i linked the html points to see other informations  </p>
+
+    <header>
+        <h2>Cities</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="aleppo.html">Aleppo</a></li>
+                <li><a href="hama.html">Hama</a></li>
+                <li><a href="homs.html">Homs</a></li>
+                <li><a href="rafah.html">Rafah</a></li>
+
+            </ul>
+        </nav>
+        <article>
+            <h1>Syrian cities</h1>
+            <img 
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hama.jpg/1280px-Hama.jpg" 
+           
+            alt="Hama"
+
+            width="200"
+            height="200"
+            >
+
+            <img src="https://www.wmf.org/sites/default/files/styles/project_gallery_full_size/public/projects/gallery/SYR_Cit_Aleppo_JPEG_img-01.jpg?itok=eUHwwZEH" 
+            
+            
+            alt="Aleppo Castle"
+            width="200"
+            height="200"
+            >
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Al-Shuhadaa_Square_-_Hims%2C_Syria.jpg" 
+            
+            alt="Homs"
+            
+             width="200"
+            height="200"
+            >
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/July_3%2C_2010%2C_Rafah.jpg/1280px-July_3%2C_2010%2C_Rafah.jpg" 
+            
+            alt="Rafah"
+            
+             width="200"
+            height="200"
+            >
+            <p>welcome to my website, here you can get informations about the popular cities in Syria</p>
+                  <cite>wikipedia</cite>    
+                </article>
+    </section>
+    <footer>
+        <p>footer &copy; Mohamad 2023</p>
+    </footer>
+
+</body>
+</html>
